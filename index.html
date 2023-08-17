@@ -65,16 +65,23 @@
           </a>
         </div>
 
-<style></style></div></div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1691804140669-5" data-silex-id="silex-id-1691804140669-5" style=""><div class="silex-element-content">
-
+<style></style></div></div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1691804140669-5" data-silex-id="silex-id-1691804140669-5" style=""><div class="silex-element-content"><!-- A notepad that saves to localStorage. Sanitizer is https://github.com/cure53/DOMPurify -->
 <div class="main-content">
 	<div class="notepad-styling">
-		<textarea class="notepad" placeholder="Type here..." maxlength="2000"></textarea>
+		<h1>My Idea Is...</h1>
+		<span class="material-symbols-rounded" style="font-size: 3rem">
+			edit_note
+		</span>
+		<textarea class="notepad" placeholder="What awesome idea are you working towards? Click the save button below to save your notes." maxlength="2000"></textarea>
 		<button id="saveBtn">Save</button>
 	</div>
 </div>
+<div class="footer">
+	Made by <a href="https://satch.co.uk/" title="Satch">Satch</a>.
+</div>
 
 <script>
+
 const notepad = document.querySelector(".notepad");
 const saveBtn = document.querySelector("#saveBtn");
 const localStorageKey = "satchnotepadcontent";
@@ -89,16 +96,14 @@ saveBtn.addEventListener("click", function () {
 	const sanitizedContent = DOMPurify.sanitize(notepad.value);
 	const isSanitized = sanitizedContent === notepad.value;
 	localStorage.setItem(localStorageKey, sanitizedContent);
-	alert("Saved! :)");
+	alert("Your notes have been saved to your browser! They will load each time you visit the page again.");
 	// Show in the log if it was sanitized successfull
 	console.log(
 		`DOMPurify sanitization ${isSanitized ? "was successful" : "failed"}.`
 	);
 });
 
-</script>
-
-</div></div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1691804092203-3" data-silex-id="silex-id-1691804092203-3" style=""><div class="silex-element-content"><p><strong>gclass embed</strong></p> <div style="width: 10px; height: 10px; background-color: #002899">&nbsp;</div> 
+</script></div></div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1691804092203-3" data-silex-id="silex-id-1691804092203-3" style=""><div class="silex-element-content"><p><strong>gclass embed</strong></p> <div style="width: 10px; height: 10px; background-color: #002899">&nbsp;</div> 
 </div></div></section>
     <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366450713-3 section-element prevent-resizable page-page-1 paged-element" data-silex-id="silex-id-1478366450713-3" style="">
         <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366450713-2 container-element website-width" data-silex-id="silex-id-1478366450713-2" style="">
