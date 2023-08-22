@@ -306,13 +306,13 @@ close();
             const locationInfo = document.getElementById('locationInfo');
             
             // Display latitude and longitude
-            locationInfo.innerHTML = `Latitude: ${latitude}<br>Longitude: ${longitude}<br>`;
+            locationInfo.innerHTML = `Latitude: ${latitude}    Longitude: ${longitude}    `;
 
             // Compare with preset values to determine if user is at home
             if (latitude === homeLat && longitude === homeLong) {
-                locationInfo.innerHTML += "You are at home.";
+                locationInfo.innerHTML += "🏡";
             } else {
-                locationInfo.innerHTML += "You are not at home.";
+                locationInfo.innerHTML += "🌎";
             }
         }
 
