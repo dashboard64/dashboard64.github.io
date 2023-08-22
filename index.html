@@ -280,8 +280,10 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 </script></div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1692744826711-0" data-silex-id="silex-id-1692744826711-0"><div class="silex-element-content"><script>
-imageContainer.style.display = 'none';
+document.getElementById('image').style.display = 'none';
 </script>
+
+
 
 
 <div id="imageContainer">
@@ -290,6 +292,7 @@ imageContainer.style.display = 'none';
 <audio id="audio" src="https://static.wikia.nocookie.net/valorant/images/8/84/Reaver_Kill_5.mp3" preload="auto"></audio>
 
 <script>
+
 document.body.addEventListener('keydown', function(event) {
   if (event.code === 'Space') {
     showImageAndPlayAudio();
